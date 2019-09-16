@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise1-JS</title>
+    <script>
+        // we can use functions inside variable.
+        var x = {
+            funcHello1: function (a, b) {
+                console.log("function 1 is working.");
+                console.log(a);
+                console.log(b);
+            },
+            funcHello2: function (a, b) {
+                console.log("function 2 is working");
+                console.log(a);
+                console.log(b);
+            }
+            /*
+             We can test function which is up with fallowing code.
+             window.x.funcHello1(value1,value2);
+             window.x.funcHello2(...,..);
+            */
+
+            // ---- type of variable ---- ////
+            /* 
+            1-) Standard
+            string , number , boolean , object  , function
+       
+            2-) There are 3 types of objects
+            - Date
+            - Array
+            - Object
+       
+            3-) 2 data type that cannot contain value
+            - null
+            - undefined
+            
+            */
+
+
+
+        }
+
+
+        // ----------- Object Declearing ------------ 
+        var car = {
+            type: "Opel",
+            model: "Astra",
+            color: "White",
+            model: 2015
+        }
+        car.Speed = 220; // appointment after declearing
+        
+        // calling below
+        console.log(car.color);
+        console.log(car.Speed);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
