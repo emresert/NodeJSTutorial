@@ -10,7 +10,7 @@ class OutOfContext {
 //  if there is an event in JS Scope , JS mixes working logic. Therefore , arrow function is used.   
 //   => (Arrow function)   provides that code works  properly in scope or scopes 
 
-//  => function  Usage in ES 6
+//  => function  Usage in ES6
     showMeData( /*param1,param2*/){
         setTimeout(() => {
            this.printData(); 
