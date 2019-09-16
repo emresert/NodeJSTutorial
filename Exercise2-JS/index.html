@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise2-JS</title>
+    <script>
+        var personList = [
+            { id: 1, name: "Emre", age: 27 },
+            { id: 2, name: "Metin", age: 24 },
+            { id: 3, name: "Türkalp", age: 21 },
+            { id: 4, name: "Ümit", age: 20 },
+            { id: 5, name: "Yılmaz", age: 26 }
+
+        ];
+        
+        function personListing(){
+            var listArea =document.getElementById("listArea");
+            for(var i = 0 ; personList.length;i++){
+                    var newRow = document.createElement("div");
+                    var person = personList[i];
+                    newRow.id = person.id;
+                    console.log("test");
+                    if (person.age > 25) {
+                        newRow.innerHTML=person.name +"<b> Abi</b>"
+                    }
+                    else if (person.age <= 25) {
+                        newRow.innerHTML=person.name +"<b>Kardeş</b>"
+                    }
+                    listArea.appendChild(newRow);
+            }
+        }
+
+        var car = {
+            type : "Fiat",
+            model :"500L",
+            color: "White",
+            modelYear  : 2015
+        }
+    </script>
+</head>
+
+<body>
+<h1>This is exercise 2</h1>
+<button  onclick="personListing()">person List</button>
+<div id ="listArea"></div>
+</body>
+
+</html>
