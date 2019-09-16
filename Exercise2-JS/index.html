@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Exercise2-JS</title>
     <script>
+        // definin JS Object
         var personList = [
             { id: 1, name: "Emre", age: 27 },
             { id: 2, name: "Metin", age: 24 },
@@ -15,28 +16,23 @@
         ];
         
         function personListing(){
-            var listArea =document.getElementById("listArea");
+            var listArea =document.getElementById("listArea"); // taking feature of listArea object with id.
             for(var i = 0 ; personList.length;i++){
-                    var newRow = document.createElement("div");
+                    var newRow = document.createElement("div"); // Creating Html element. We used html div tag for creating.
                     var person = personList[i];
                     newRow.id = person.id;
-                    console.log("test");
+                   
                     if (person.age > 25) {
                         newRow.innerHTML=person.name +"<b> Abi</b>"
                     }
                     else if (person.age <= 25) {
                         newRow.innerHTML=person.name +"<b>Kardeş</b>"
                     }
-                    listArea.appendChild(newRow);
+                    listArea.appendChild(newRow); // we must append newRow to div wit AppendChild command
             }
         }
 
-        var car = {
-            type : "Fiat",
-            model :"500L",
-            color: "White",
-            modelYear  : 2015
-        }
+        
     </script>
 </head>
 
