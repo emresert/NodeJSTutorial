@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise4-JS</title>
+    <script>
+        class BaseHuman {
+            constructor(name) {
+                this.name = name;
+                this.type = 'HumanBase';
+                console.log("BaseHuman Constructor");
+            }
+            walk() {
+                console.log("Base walk");
+            }
+
+        }
+        class Saphiens extends BaseHuman {
+            // constructor takes a 'name' value inside own. We must not forget it while using.
+            constructor(name) {
+                super(name)  // Every time 'super' should be in this row to be a constructor. Parameter is not important.
+                // if we dont use super ,this constructure  will destroy first constructure of BaseHuman class
+               //  if we remove super word , we face error like this "index.html:23 Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor"
+                this.type = "Saphien";
+                console.log("Saphien Constructor");
+            }
+            walk() {
+                super.walk();
+                console.log("Saphien Walk");
+            }
+        }
+        function HumanWalker() {
+            let human = new Saphiens("Emre");
+            human.walk();
+        }
+    </script>
+</head>
+
+<body>
+<h1> This Exercise4-JS</h1>
+<button onclick="HumanWalker()"> Run </button>
+</body>
+
+</html>
