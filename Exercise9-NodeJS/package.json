@@ -1,0 +1,25 @@
+{
+  "name": "myexercise1233",
+  "version": "1.0.0",
+  "description": "This is only for test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files":["index.js"], 
+  "keywords": [
+    "test",
+    "npm",
+    "package",
+    "there",
+    "is",
+    "no",
+    "need",
+    "download"
+  ],
+  "author": "Emre SERT",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
